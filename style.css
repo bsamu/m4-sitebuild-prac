@@ -1,44 +1,186 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: none;
-    box-sizing: border-box;
-  
-    background: transparent;
-  
-    font-family: inherit;
-    
-    text-decoration: none;
-  }
-  
-  ol, ul, li {
-    list-style:none;
-    display:block;
-  }
-  
-  table {
-    border-collapse:collapse;
-    border-spacing:0
-  }
-  
-  a img {
-    border: none
-  }
-  
-  button, a {
-    cursor: pointer;
-    color: inherit
-  }
-  
-  textarea {
-    resize: none
-  }
-  
-  button, input, textarea, select {
-    appearance: none !important;
-    -webkit-appearance: none !important;
-    border-radius: 0
-  }
+/* css reset */
 
-  /* end of css reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+
+  background: transparent;
+
+  font-family: inherit;
+
+  text-decoration: none;
+
+  color: inherit;
+}
+
+/* ol, ul, li {
+list-style:none;
+display:block;
+} 
+
+table {
+border-collapse:collapse;
+border-spacing:0
+}
+
+a img {
+border: none
+} */
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+/* textarea {
+resize: none
+}
+
+
+button, input, textarea, select {
+appearance: none !important;
+-webkit-appearance: none !important;
+border-radius: 0
+} */
+
+/* end of css reset */
+
+:root {
+  --primary: #ffeedf;
+  --secondary: #125434;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  /* color: var(--primary); */
+  background-color: var(--primary);
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+
+  width: 100%;
+  height: 60px;
+
+  background-color: var(--primary);
+  color: var(--secondary);
+  border-bottom: 2px solid var(--secondary);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 12px;
+}
+
+header button span.menu {
+  font-size: 36px;
+  margin: 12px;
+}
+
+main {
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+main #container {
+  max-width: 930px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main #container .card {
+  position: relative;
+  width: 405px;
+  margin: 30px;
+  padding: 36px;
+
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+main #container .card h2 {
+  font-size: 36px;
+  font-weight: normal;
+  border-bottom: 2px solid var(--primary);
+  min-height: 80px;
+  /* padding-bottom: 36px; */
+}
+
+main #container .card .index {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+
+  width: 40px;
+  height: 40px;
+
+  font-size: 24px;
+  color: black;
+  border: 2px solid var(--secondary);
+  border-radius: 50%;
+  background-color: var(--primary);
+  color: var(--secondary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* main #container .card .title {
+  font-size: 36px;
+  font-weight: normal;
+} */
+
+main #container .card .sub {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+main #container .card .text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+main #container .card button {
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+
+  /* color: black; */
+  width: 200px;
+  height: 50px;
+
+  font-size: 14px;
+  background-color: var(--primary);
+  color: var(--secondary);
+  border: 2px solid var(--secondary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main #container .card button span.arrow {
+  font-size: 36px;
+  position: absolute;
+  right: 5px;
+}
+
+main #container .card button:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+  border-color: var(--primary);
+}
