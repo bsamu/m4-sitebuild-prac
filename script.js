@@ -63,7 +63,7 @@ const creator = (item) => {
             <h2>${item.title}</h2>
             <div class="sub">${item.sub}</div>
             <div class="text">${item.text}</div>
-            <button><span class="buttonText">details</span><span class="arrow material-icons">east</span></button>
+            <button><span class="buttonText">details</span><span class="arrow material-icons">arrow_forward</span></button>
         </div>`
 }
 // console.log(result)
