@@ -56,7 +56,7 @@ let arr = [
 //         <div class="index">${arr.indexOf(item) + 1}</div>
 //     </div>`
 // }
-const beerCard = (item) => {
+const creator = (item) => {
     return `
         <div class="card">
             <div class="index">${arr.indexOf(item) + 1}</div>
@@ -73,7 +73,7 @@ function loadEvent() {
     const container = document.querySelector("#container")
     // container.insertAdjacentHTML("beforeend", item)
     for (const item of arr) {
-        container.insertAdjacentHTML("beforeend", beerCard(item))
+        container.insertAdjacentHTML("beforeend", creator(item))
     }
 
     console.log('the page has loaded');
